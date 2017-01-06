@@ -1,1 +1,1 @@
-module.exports = Array.prototype.slice.bind(null);
+module.exports = Function.prototype.call.bind(Array.prototype.slice);
