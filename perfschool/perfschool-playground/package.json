@@ -1,0 +1,52 @@
+{
+  "name": "perfschool",
+  "version": "1.0.3",
+  "description": "Find your way through the performance optimization maze in this NodeSchool workshopper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bevacqua/perfschool.git"
+  },
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "nicolasbevacqua@gmail.com",
+    "url": "http://bevacqua.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bevacqua/perfschool/issues"
+  },
+  "homepage": "https://github.com/bevacqua/perfschool",
+  "main": "perfschool.js",
+  "bin": {
+    "perfschool": "./perfschool.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "express": "4.12.3",
+    "serve-static": "1.9.2"
+  },
+  "gitHead": "5aa7a1de7be505eea9ac097707adb28e85d3e732",
+  "_id": "perfschool@1.0.3",
+  "scripts": {},
+  "_shasum": "0aa8895dbe310df3c114815ecbf3084bc35fe305",
+  "_from": "perfschool@",
+  "_npmVersion": "2.12.1",
+  "_nodeVersion": "2.3.4",
+  "_npmUser": {
+    "name": "bevacqua",
+    "email": "nicolasbevacqua@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "bevacqua",
+      "email": "nicolasbevacqua@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "0aa8895dbe310df3c114815ecbf3084bc35fe305",
+    "tarball": "https://registry.npmjs.org/perfschool/-/perfschool-1.0.3.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/perfschool/-/perfschool-1.0.3.tgz",
+  "readme": "ERROR: No README data found!"
+}
