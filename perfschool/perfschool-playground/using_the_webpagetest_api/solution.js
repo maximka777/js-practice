@@ -4,7 +4,10 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 7777;
+var port = 7777;
+
+var WebPageTest = require('webpagetest');
+var wpt = new WebPageTest('www.webpagetest.org', 'A.6755d3ef7f0fb003def7967e0b2b369f');
 
 app.get('/', home);
 app.get('/test', test);
@@ -21,5 +24,11 @@ function home (req, res) {
 }
 
 function test (req, res) {
-  res.end('Not very testful!');
+
+  wpt.runTest('https://5691d900.ngrok.io/', {location: 'ec2-eu-central-1:Chrome'}, function(err, data) {
+    wpt.getTestResults(data.data.testId, function(err, pageSpeedData) {
+      res.send(pageSpeedData);
+    });
+  });
+
 }

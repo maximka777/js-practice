@@ -1,18 +1,8 @@
+/*** uncss> filename: index.css ***/
 body {
   background-color: #333;
   color: #f2ca27;
   padding: 25px;
-}
-p {
-}
-p:first-child {
-  margin-top: 0;
-}
-p:last-child {
-  margin-bottom: 0;
-}
-p:empty {
-  height: 10px;
 }
 .header {
   text-align: center;
@@ -32,11 +22,6 @@ section {
   white-space: pre-wrap;
   padding: 0 20px;
   background-color: rgba(0, 0, 0, 0.1);
-}
-div {
-  padding: 25px;
-  text-align: center;
-  max-width: 350px;
 }
 
 @-webkit-keyframes blink {
@@ -69,14 +54,6 @@ div {
   50% { opacity: 1 }
   97% { opacity: 1 }
   100% { opacity: 0.1 }
-}
-
-@media only screen and (max-width: 768px) {
-  div {
-    padding: 10px;
-    max-width: inherit;
-    text-align: left;
-  }
 }
 
 .link-section {
